@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<meta name="robots" content="noindex">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandon Butler | Cybersecurity Specialist</title>
+    <link rel="stylesheet" href="styles.css"> 
+<style id="jsbin-css">
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; 
+    background-color: #181818; 
+    color: #EAEAEA; 
+    line-height: 1.6;
+}
+
+a {
+    color: #0AF; 
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #08D;
+}
+
+header {
+    background-color: #121212; 
+    padding: 1rem 2rem;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    color: #0BF; 
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+nav li {
+    font-size: 1.1rem;
+}
+
+section {
+    padding: 2rem;
+}
+
+h2, h3 {
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#about p {
+    max-width: 800px;
+    text-align: center;
+}
+
+#about p, #skills ul, #projects article {
+    background-color: #222; 
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #181818;
+    color: #EAEAEA;
+    line-height: 1.6;
+    background-image: url('https://s3.us-west-1.amazonaws.com/brandonbsecure.online/AdobeStock_183503207+(1).jpeg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#about::before {
+    content: "";
+    display: block;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-image: url('https://s3.us-west-1.amazonaws.com/brandonbsecure.online/UnknownPhotoNFilm+-+Linkedin+Profile+2-9.jpg'); /* Make sure to specify the path to the profile picture here */
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto 2rem auto;
+}
+
+footer {
+    background-color: #121212;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Brandon Butler</h1>
+        <p>Cybersecurity & Technical Specialist</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Having been involved in technology my entire life, and with over three years of professional experience in the cybersecurity field, I've not only honed my skills in deploying robust cloud networks on AWS but, on Azure using Infrastructure as Code. I have also become proficient with Git version control. Deeply invested in web development, I am passionate about crafting responsive designs using HTML, CSS, and JavaScript, always focusing on user experience. Through close team collaboration and best cybersecurity practices, I've also ensured networks remain resilient against threats. As I continuously broaden my expertise, I'm excited to join a team that values a balanced blend of technology and security.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Network Security</li>
+            <li>Vulnerability Assessment</li>
+            <li>Cloud Architecture</li>
+            <li>Security Information and Event Management (SIEM) </li>
+            <li>Technical Support</li>
+            <li>Linux and Windows System Administration</li>
+        
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Highlighted Projects</h2>
+        <article>
+            <h3>Project 1: Elastic Stack (ELK)</h3>
+            <p>
+                I implemented load-balancing for the DVWA (D*mn Vulnerable Web Application), enhancing its ability to handle traffic. By integrating an ELK server, I established a robust monitoring system that tracked changes to log files and closely observed VM resource utilization. Also by utilizing Docker and Ansible, I streamlined application deployment and configuration, ensuring that the infrastructure was both scalable and consistently configured. This integration not only improved system oversight but also allowed users to effectively monitor vulnerabilities in real-time. This approach ensured optimized performance and heightened security awareness for the application environment.
+        </p>    
+        </article>
+        <article>
+            <h3>Project 2: Terraform + AWS</h3>
+            <p>
+                Utilizing Terraform, we implemented Infrastructure as Code to streamline and automate the deployment of our cloud network on Amazon Web Services. By defining and provisioning AWS infrastructure using Terraform's declarative coding toolset, we ensured consistency, repeatability, and scalability in our network setup. Additionally, we used Vagrant to deploy a virtual machine that was pre-configured with all the essential tools required for our cloud network deployment. Leveraging Terraform's state management capabilities, we maintained synchronization between our code and the actual state of our AWS resources. This approach significantly reduced manual configuration errors, accelerated deployment times, and facilitated easy scaling and adaptability for future network demands. <a href="https://github.com/BrandonBSecure/Virtual-Network-Project-1.0">Virtual-Network-Project</a>
+            </p>
+        </article>
+         <article>
+            <h3>Project 3: Web Development</h3>
+            <p>
+                I designed this website leveraging the core trio of web development: HTML for structure, CSS for design, and JavaScript for interactivity. Throughout the entire development, I used GitHub as a version control system to track changes. Hosting was achieved by using AWS S3 buckets, with AWS Route 53 handling DNS management after acquiring the domain via Namecheap. For enhanced security and trust, I integrated SSL for HTTPS encryption through AWS Certificate Manager, ensuring a seamless, secure, and responsive digital platform.
+            </p>
+        </article>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Interested in working together or have a question? Reach out!</p>
+        <a href="mailto:brandonbsecure@outlook.com">brandonbsecure@outlook.com</a>
+        <br>
+        <a href="https://www.linkedin.com/in/brandonrbutler/">https://www.linkedin.com/in/brandonrbutler/</a>
+        <br>
+        <a href="Instagram">Instagram</a>
+    </section>
+
+    <footer>
+        <p>© 2023 Brandon Butler. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
